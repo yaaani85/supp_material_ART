@@ -1,0 +1,9 @@
+model_type: complex
+dataset: 
+  class: OGBLBioKG
+  path: ./data
+  n_relations: 51
+  n_entities: 93773
+
+embedding_dimension: 1000
+seed: 17

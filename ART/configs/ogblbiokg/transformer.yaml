@@ -1,0 +1,34 @@
+version: icml
+model_type: arm_transformer
+dataset: 
+  class: OGBLBioKG
+  path: ./data
+  n_relations: 51
+  n_entities: 93773
+
+# Experiment settings
+save_model: True
+epochs: 1000
+seed: 17
+
+# Training parameters
+lr: 0.001121
+prediction_smoothing: 1.0e-30
+dropout: 0.026
+factor: 0.9 
+lr_patience: 2
+label_smoothing: 0.0
+
+# Model parameters
+embedding_dimension: 150
+num_blocks: 3 
+num_neurons: 8 
+num_heads: 1 
+
+prior:
+  init_weights: frequencies
+  optimize_temperature: True
+  alpha: 1
+
+optimize:
+  mrr

@@ -1,0 +1,33 @@
+version: icml
+model_type: arm_transformer
+
+dataset: 
+  class: FB15K237
+  path: ./data
+  n_relations: 237
+  n_entities: 14541
+
+# Experiment settings
+save_model: True 
+epochs: 1
+lr: 0.001
+weight_decay: 0.6554
+prediction_smoothing: 1.0e-7
+label_smoothing: 0.1 
+seed: 17
+factor: 0.6 
+lr_patience: 10
+max_patience: 50
+
+# Hyperparameters
+embedding_dimension: 150
+num_blocks: 3 
+num_neurons: 2 
+num_heads: 1 
+dropout: 0.14
+
+prior:
+  alpha: 1
+
+
+optimize: mrr

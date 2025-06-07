@@ -1,0 +1,8 @@
+model_type: complex2
+dataset: 
+  class: FB15K237
+  path: ./data
+  n_relations: 237
+  n_entities: 14541
+
+embedding_dimension: 1000

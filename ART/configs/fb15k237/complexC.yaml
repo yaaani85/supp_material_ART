@@ -1,0 +1,9 @@
+model_type: complex
+with_calibration: true
+dataset: 
+  class: FB15K237
+  path: ./data
+  n_entities: 14541
+  n_relations: 237
+
+embedding_dimension: 1000

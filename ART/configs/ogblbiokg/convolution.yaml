@@ -1,0 +1,20 @@
+model_type: arm_convolution
+dataset: 
+  class: OGBLBioKG
+  path: ./data
+
+save_model: True 
+epochs: 1000
+batch_size: 1024
+test_batch_size: 1024 
+embedding_dimension: 150
+lr: 0.001
+prediction_smoothing: 1.0e-30
+dropout: 0.02631
+factor: 0.86368
+seed: 17
+prior_type: learnable
+kernel_size: 3
+m: 256
+lr_patience: 2
+

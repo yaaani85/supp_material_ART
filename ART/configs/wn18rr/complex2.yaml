@@ -1,0 +1,9 @@
+model_type: complex2
+dataset: 
+  class: WN18RR
+  path: ./data
+  n_relations: 11
+  n_entities: 40943
+
+embedding_dimension: 1000
+seed: 17

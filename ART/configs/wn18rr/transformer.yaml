@@ -1,0 +1,38 @@
+version: icml
+model_type: arm_transformer
+dataset: 
+  class: WN18RR
+  path: ./data
+  n_relations: 11
+  n_entities: 40943
+
+
+# Experiment settings
+save_model: True 
+epochs: 1000 
+
+# Training parameters
+lr: 0.001
+weight_decay: 1
+prediction_smoothing: 1.0e-30
+label_smoothing: 1.0e-5
+factor: 0.75114
+lr_patience: 10
+max_patience: 20
+dropout: 0.37062
+seed: 17
+
+# Model parameters
+embedding_dimension: 150 
+num_blocks: 5
+num_neurons: 2
+num_heads: 2
+
+#Prior
+prior:
+  alpha: 1
+  init_weights: frequencies
+#target
+optimize: mrr
+
+

@@ -1,0 +1,18 @@
+model_type: arm_convolution
+dataset: 
+  class: FB15K237
+  path: ./data
+save_model: True
+
+epochs: 1000
+
+embedding_dimension: 150
+lr: 0.007255
+weight_decay: 2
+prediction_smoothing: 1.0e-30 
+label_smoothing: 0.1
+dropout: 0.1725
+factor: 0.5
+kernel_size: 3
+m: 256
+lr_patience: 10
